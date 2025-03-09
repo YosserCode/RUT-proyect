@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+
 @Controller
 public class IndexController {
 	
@@ -13,5 +14,10 @@ public class IndexController {
 		model.addAttribute("mensaje", "Hola bienvenido a la web de RUT");
 		return "index";
 	}
+	@GetMapping("/contact")
+	public String Contacto(Model model) {
+		return "contact";
+	}
+	
 
 }
