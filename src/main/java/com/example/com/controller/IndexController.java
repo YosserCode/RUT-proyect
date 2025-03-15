@@ -14,9 +14,21 @@ public class IndexController {
 		model.addAttribute("mensaje", "Hola bienvenido a la web de RUT");
 		return "index";
 	}
-	@GetMapping("/contact")
+	@GetMapping("/contacto")
 	public String Contacto(Model model) {
-		return "contact";
+		return "contacto";
+	}
+	@GetMapping("/nosotros")
+	public String Nosotros(Model model) {
+		return "nosotros";
+	}
+	@GetMapping("/productos")
+	public String Productos(Model model) {
+		return "productos";
+	}
+	@GetMapping("/carrito")
+	public String Carrito(Model model) {
+		return "carrito";
 	}
 	
 
