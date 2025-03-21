@@ -180,7 +180,7 @@ class Carrito{
             })
         }
         else{
-            location.href="carrito.html";
+            location.href="carrito";
         }
     }
 
