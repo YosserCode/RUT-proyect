@@ -5,7 +5,7 @@ COPY . .
 RUN mvn clean package
 
 # Etapa de ejecución con JDK 17
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-slim
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk
