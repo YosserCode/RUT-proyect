@@ -1,2 +1,5 @@
-  User-agent: *
+User-agent: *
 Allow: /
+
+Sitemap: https://rut-proyect.onrender.com/sitemap.xml
+ 
