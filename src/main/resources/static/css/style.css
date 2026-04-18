@@ -49,8 +49,10 @@ header a{
 }
 .menu{
     display: flex;
+    width: space-between;
+    align-items: center;
     width: 95%;
-    max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .logo-nav{
@@ -58,7 +60,8 @@ header a{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-left: 450px;
+    margin-left: 0px;
+    width: 100%;
 }
 .logo{
     color: #f2f2f2;
@@ -242,12 +245,14 @@ main{
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 .circulo2{
-    justify-content: center;
-    align-items: center;
-    width: 45%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
     border-radius: 50%;
     border:2px solid  #DF691A;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    max-width: 120px;
+    height: auto;
 }
 .ver-todo{
     margin: 50px 0;
@@ -652,6 +657,23 @@ main{
     }
     .tabla td, .tabla th {
         padding: .1rem;
-    }    
+    }
+    /*para celular config*/
+    @media (max-width: 768px) {
+    .navigation ul{
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+    }
+
+    .navigation ul li{
+        padding: 10px 0;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 }
